@@ -1,0 +1,78 @@
+public class Main {
+    public static void main(String[] args) {
+        int a = 10, b = 5;
+
+         //arithmetic
+        // Basic operators
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));   
+        System.out.println("a * b = " + (a * b));   
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a % b = " + (a % b));
+         
+        //last digit
+        int c=4567;
+        int s=0;
+        s=c%10;
+        System.out.println(s);//7
+        
+        //first two digit
+
+        c=c/10;
+        System.out.println(c);//456
+        
+        //first digit
+        s=s+c%10;
+        c=c/10;
+        System.out.println(c);//45
+        System.out.println(s);//13
+        
+        //if four first
+        s=s+c%10;
+        c=c/10;
+        System.out.println(c);//4
+        System.out.println(s);//18
+        
+        //what if
+         s=s+c%10;
+         c=c/10;
+        System.out.println(c);//0
+         System.out.println(s);//22
+        
+        
+        //relational
+        
+                //general
+        System.out.println(a == b);   // false
+        System.out.println(a != b);   // true
+        System.out.println(a > b);    // t
+        System.out.println(a < b);    // f
+        System.out.println(a >= 10);  // t
+        System.out.println(b <= 15);  // t
+        
+        // Storing the result in a boolean
+        boolean isAdult = (18 >= 18);
+        System.out.println(isAdult);  // true
+        //even and odd
+        boolean iseven=a%2==0;
+        System.out.println(iseven);//true
+        boolean isodd=b%2==0;
+        System.out.println(isodd);//false
+        
+        //floating point  
+        System.out.println(0.1 + 0.2 == 0.3);  
+        // false[0.30000000000000004==0.3]
+        
+        
+        //operating methods
+        System.out.println(a*5/2==b+14);//false [25==19]
+        
+        //opm2
+        int d=a%2+b/10;//0
+        boolean res=d>=18;//0>=18
+        System.out.println(res);//false
+        
+
+
+    }
+}
