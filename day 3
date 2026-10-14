@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class hiy{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       System.out.println("enter a number");
+       int a=sc.nextInt();
+       if(a>20){
+        System.out.println("greater");
+       }
+       else if(a<20)
+       {
+        System.out.println("lesser");
+       }
+       else{
+        System.out.println("equal");
+       }
+        
+        
+        
+
+         
+    }
+}
