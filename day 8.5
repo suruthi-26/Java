@@ -1,0 +1,41 @@
+class Calculator {
+    int a;
+    int b;
+
+    // constructor: object create pannumbodhe values kudukkum
+    Calculator(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    int add() {
+        return a + b;
+    }
+
+    int subtract() {
+        return a - b;
+    }
+
+    int multiply() {
+        return a * b;
+    }
+
+    float divide() {
+        if (b == 0) {
+            System.out.println("Cannot divide by zero");
+            return 0;
+        }
+        return (float) a / b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator(10, 4);   // constructor ku values pogum
+
+        System.out.println("Add      : " + calc.add());        // 14
+        System.out.println("Subtract : " + calc.subtract());   // 6
+        System.out.println("Multiply : " + calc.multiply());   // 40
+        System.out.println("Divide   : " + calc.divide());     // 2.5
+    }
+}
